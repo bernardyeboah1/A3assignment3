@@ -1,0 +1,147 @@
+/* Full CSS */
+body {
+  /* Set background color and font family */
+  background-color: #E8B34D;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Create linear gradient background */
+  background: linear-gradient(to bottom, #e8f9fd 10%, #E1D9D1 100%);
+}
+
+/*  Left margin for the content */
+#wrapper section {
+  margin-left: 25vh;
+}
+
+/*  Wrapper width, height, and background */
+#wrapper {
+  width: 960px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Create linear gradient background */
+  background: linear-gradient(315deg, white 0%, #e8f9fd);
+}
+
+/* Style nav links */
+section nav ul li {
+  display: inline-block;
+  margin-left: 60px;
+  font-weight: bold;
+  list-style: none;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Style nav link text */
+section nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* Style figure */
+#wrapper section figure {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Style h1 headings */
+#wrapper section h1 {
+  margin-left: 50px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+/* Hover effect for h1 headings */
+#wrapper section h1:hover {
+  transform: translate(10px, -10px);
+}
+
+/* Style h2 headings */
+#wrapper section h2 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: #ff1e00;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+/* Hover effect for h2 headings */
+#wrapper section h2:hover {
+  transform: translate(10px, -10px);
+}
+
+/*  h1 headings */
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: #ff1e00;
+  font-size: 20px;
+  margin-right: 20vh;
+}
+
+/* Style paragraphs */
+p {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: #ff1e00;
+  margin-left: auto;
+}
+
+/* Style images */
+section img {
+  height: 210px;
+  width: auto;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+/* Home page styling */
+#wrapper section a img {
+  margin-top: 60px;
+  height: auto;
+  width: 250px;
+  margin-left: 30vh;
+}
+
+/* Hover effect for images */
+section img:hover {
+  transform: translate(10px, -10px);
+}
+
+/* Style submit button */
+input[type=submit] {
+  background-color: lightblue;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Style footer  */
+footer p {
+  text-align: center;
+}
+
+/*  h5 headings */
+#wrapper section h5 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: #ff1e00;
+  margin-bottom: 80px;
+  text-align: center;
+  margin-right: 50px;
+}

@@ -1,0 +1,53 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-10">
+            <h1><%= title %></h1>
+            <a href="/course-list/add" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add a course
+            </a>
+            <br>
+            <br>
+
+            <table class="table table-bordered table-striped table-hover">
+                <tr class="d-flex">
+                    <th class="text-center col-2">name</th>
+                    <th class="text-center col-2">prof</th>
+                    <th class="text-center col-1">start</th>
+                    <th class="text-center col-5">end</th>
+                    <th class="text-center col-1">grade</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+                </tr>
+                <!-- Repeat the template -->
+                <% for (let count=0; count<CourseList.length; count++) { %>
+                    <tr class='d-flex'>
+                        <td class='text-center col-2'><%= CourseList[count].name %></td>
+                        <td class='text-center col-2'><%= CourseList[count].prof %></td>
+                        <td class='text-center col-1'><%= CourseList[count].start %></td>
+                        <td class='text-center col-5'><%= CourseList[count].end %></td>
+                        <td class='text-center col-1'><%= CourseList[count].grade %></td>
+                        <td class='text-center col-1'>
+                            <a href="/course-list/edit/<%= CourseList[count]._id %>" class="btn btn-primary">
+                                <i class="fas fa-pencil-alt"></i> Edit
+                            </a>
+                        </td>
+                        <td class='text-center col-1'>
+                            <a href="/course-list/delete/<%= CourseList[count]._id %>" class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
+
+    
+

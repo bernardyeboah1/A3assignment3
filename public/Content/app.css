@@ -1,0 +1,184 @@
+/* Custom CSS goes here */
+/* Full CSS */
+.display-4 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Oswald', serif;
+  color:  #808080;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.custom-bg-light {
+  background-color: #78b8a3; /* This is a very light sky blue color */
+}
+
+
+body {
+  /* Set background color and font family */
+  background-color: #E8B34D;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Create linear gradient background */
+  background: linear-gradient(to bottom, #e8f9fd 10%, #E1D9D1 100%);
+}
+
+
+
+#low-head{
+  margin-left: 25px;
+  
+}
+
+.navbar-brand{
+  font-weight: bold;
+}
+
+/*  Left margin for the content */
+#wrapper section {
+  margin-left: 25vh;
+}
+
+/*  Wrapper width, height, and background */
+#wrapper {
+  width: 960px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Create linear gradient background */
+  background: linear-gradient(315deg, white 0%, #e8f9fd);
+}
+
+
+
+/* Style nav link text */
+section nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* Style figure */
+#wrapper section figure {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Style h1 headings */
+#wrapper section h1 {
+  margin-left: 50px;
+  font-size: 25px;
+  transition: 0.3s;
+  color:   #8fcdb5;
+  font-weight: bolder;
+}
+
+/* animation effect for h1 headings */
+#wrapper section h1 {
+  animation: upAndDown 2s ease-in-out infinite alternate;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Style h2 headings */
+#wrapper section h2 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color:  #6cb89f;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+/* Hover effect for h2 headings */
+#wrapper section h2:hover {
+  transform: translate(10px, -10px);
+}
+
+/*  h1 headings */
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color:  #6cb89f;
+  font-size: 20px;
+  margin-right: 20vh;
+}
+
+/* Style paragraphs */
+p {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: #3b7e68;
+  margin-left: auto;
+}
+
+/* Style images */
+section img {
+  height: 210px;
+  width: auto;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+/* Home page styling */
+#wrapper section a img {
+  margin-top: 60px;
+  height: auto;
+  width: 250px;
+  margin-left: 30vh;
+}
+
+/* animation effect for images */
+#wrapper section img {
+  animation: upAndDown 2s ease-in-out infinite alternate;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Style submit button */
+input[type=submit] {
+  background-color: #3b7e68;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Style footer  */
+footer p {
+  text-align: center;
+}
+
+/*  h5 headings */
+#wrapper section h5 {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Kanit', sans-serif;
+  margin-top: 50px;
+  color: #808080;
+  margin-bottom: 80px;
+  text-align: center;
+  margin-right: 40px;
+}

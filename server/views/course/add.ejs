@@ -1,0 +1,73 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="nameTextField">Course Title</label>
+                    <input type="text" class="form-control" id="nameTextField" placeholder="Enter the Course name" name="name" required>
+
+                </div>
+
+                <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="profTextField">Course prof</label>
+                    <input type="text" class="form-control" id="profTextField" placeholder="Enter the Course prof" name="name" required>
+                    
+                </div>
+
+                <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="startTextField">Course start date</label>
+                    <input type="text" class="form-control" id="startTextField" placeholder="Enter the Course start date" name="name" required>
+                    
+                </div>
+
+                <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="endTextField">Course end date</label>
+                    <input type="text" class="form-control" id="endTextField" placeholder="Enter the Course end date" name="name" required>
+                    
+                </div>
+
+                <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label for="gradeTextField">Course Grade</label>
+                    <input type="text" class="form-control" id="gradeTextField" placeholder="Enter your grade" name="name" required>
+
+
+                    <button class= "btn btn-primary" type="submit">
+                    <i class= "fas fa-edit"></i> Submit </button>
+
+                    <a href ="/course-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i>Cancel</a>
+
+
+                    <button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

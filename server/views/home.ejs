@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+
+   
+   
+
+    <meta name="viewport" content="width=device-width">
+        <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+
+  <link rel='stylesheet' href='/Content/app.css' />
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+  <link rel="stylesheet" href="/css/styles.css/"/>
+  <link rel="stylesheet" href="/Content/tablet.css" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+  <link rel="stylesheet" href="/Content/phone.css" type="text/css" media="only screen and (max-width:480px)">
+
+  </head>
+  <body>
+
+  <!--Navigation Bar-->
+
+<nav class="navbar navbar-expand-lg navbar-light custom-bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">INFR3120</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+        <% if (title == 'Home') {%>
+          <a class="nav-link active" aria-current="page" href="/home">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/home">
+        <% } %>
+
+
+        
+        
+          <i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+        <% if (title == 'About') {%>
+          <a class="nav-link active " aria-current="page" href="/about">
+        <% } else { %>
+          <a class="nav-link " aria-current="page" href="/about">
+        <% } %>
+
+
+
+          
+          <i class="fa-solid fa-info"></i> About</a>
+        </li>
+
+        <li class="nav-item">
+        <% if (title == 'Projects') {%>
+          <a class="nav-link active" aria-current="page" href="/projects">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/projects">
+        <% } %>
+          
+          <i class="fa-solid fa-gear"></i> Projects</a>
+        </li>
+
+        <li class="nav-item">
+        <% if (title == 'Courses') {%>
+          <a class="nav-link active" aria-current="page" href="/course-list">
+        <% } else { %>
+          <a class="nav-link" aria-current="page" href="/course-list">
+        <% } %>
+
+        <i class="fa-solid fa-school"></i> Courses</a>
+
+
+        <li class="nav-item">
+          <% if (title == 'Contact') {%>
+            <a class="nav-link active" aria-current="page" href="/contact">
+          <% } else { %>
+            <a class="nav-link" aria-current="page" href="/contact">
+          <% } %>
+          
+          <i class="fa-solid fa-phone"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div> 
+</nav> 
+    <div id="wrapper">
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title %> page</h1>
+
+  <hr class="my-4">
+  <p class="lead">
+  </p>
+</div>
+      <article>
+        <section>
+
+
+
+
+          <h1>Bernard Yeboah, Student at Ontario Tech University</h1>
+          <p>Hello, my name is Bernard. Welcome to my personal website. Feel free to scroll around!</p>
+          <a><img src="Assets/images/IMG-3106.JPG" alt="Image for homepage"></a>
+          <h5>Information Technology Security student at Ontario Tech University with experience
+             in customer service and community outreach. 
+             Proficient in Python programming and networking, I bring technical expertise along with a strong academic record 
+             and a passion for volunteering and fitness, making me a well-rounded candidate for IT security positions.
+          </h5>
+        </section>
+      </article>
+    </div>
+    <footer>
+   
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg-light">
+    <h6>&#169; 2023 All rights reserved by Bernard Yeboah.</h6>
+    <h1></h1>
+    <h6>Email: <a href="mailto:bernard.yeboah@ontariotechu.net">bernard.yeboah@ontariotechu.net</a> | LinkedIn: <a href="https://www.linkedin.com/in/bernard-yeboah-b6a668261" target='_blank'>LinkedIn Profile</a>
+      | Github: <a href="https://github.com/bernardyeboah1" target='_blank'>Github</a></h5>
+    
+    </nav>
+    </footer>
+  </body>
+</html>
