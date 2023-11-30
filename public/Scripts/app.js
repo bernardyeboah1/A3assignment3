@@ -1,27 +1,8 @@
-// SPA --> Single Page Application
-// Client Side
+// Immidiate invoked function express
 
 (function(){
-  function Start()
-  {
-    console.log("App Started");
-    let deleteButtons = document.querySelectorAll('.btn-danger');
-    for(button of deleteButtons)
-    {
-       button.addEventListener('click',(event)=>{
-        if(!confirm("Are you sure?"))
-  
-        {
-          event.preventDefault();
-          window.location.assign('/course-list')
-        }
-  
-       });
-    }
-
+  function Start(){
+      console.log("Application started....");
   }
-  window.addEventListener("load", Start);
-
- 
-
+  window.addEventListener("load",Start);
 })();

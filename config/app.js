@@ -21,7 +21,7 @@ mongDB.once('open',()=> {
 
 let indexRouter = require('../../routes/index');
 let usersRouter = require('../routes/users');
-let courseRouter = require('../../routes/course')
+let CourseRouter = require('../../routes/course')
 
 let app = express();
 
@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/course-list',courseRouter);
+app.use('/courselist',CourseRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

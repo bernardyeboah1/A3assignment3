@@ -10,6 +10,6 @@ let courseModel = mongoose.Schema({
 
 },
 {
-  collection: "courses" 
-})
+  collection: "Bio_courses" 
+});
 module.exports = mongoose.model('Course', courseModel);
